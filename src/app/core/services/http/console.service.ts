@@ -10,11 +10,23 @@ export class ConsoleService {
 endPoint: string = environment.ConsoleEndPoint;
   constructor(private _httpClient: HttpClient) { }
 
-  get(): Observable<Console[]>{
+  get(): Observable<Console[]> {
     return this._httpClient.get<Console[]>(this.endPoint);
   }
-  post(console: Console):Observable<Console>
-  {
+
+  getById(id: number): Observable<Console> {
+    return this._httpClient.get<Console>(this.endPoint + "/" + id);
+  }
+
+  post(console: Console): Observable<Console> {
     return this._httpClient.post<Console>(this.endPoint, console);
+  }
+
+  put(console: Console): Observable<Console> {
+    return this._httpClient.put<Console>(this.endPoint + "/" + console.id, console)
+  }
+
+  delete(console: Console): Observable<Console> {
+    return this._httpClient.delete<Console>(this.endPoint + "/" + console.id)
   }
 }

@@ -1,4 +1,5 @@
 <table mat-table [dataSource]="consoles$ | async" class="mat-elevation-z8">
+
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef>id</th>
       <td mat-cell *matCellDef="let console">{{ console.id }}</td>
@@ -15,6 +16,25 @@
       <th mat-header-cell *matHeaderCellDef>type</th>
       <td mat-cell *matCellDef="let console">{{ console.type }}</td>
     </ng-container>
+
+    <ng-container matColumnDef="update">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let player">
+        <button mat-icon-button (click)="openDialog(true, player)">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let player">
+        <button mat-icon-button (click)="delete(player)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+    
     <tr mat-header-row *matHeaderRowDef="toto"></tr>
     <tr mat-row *matRowDef="let row; columns: toto"></tr>
   </table>

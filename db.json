@@ -33,6 +33,12 @@
       "name": "DS",
       "year": 2004,
       "type": "console portable"
+    },
+    {
+      "name": "letssgo",
+      "year": "3424",
+      "type": "console de salon",
+      "id": 5
     }
   ]
 }
