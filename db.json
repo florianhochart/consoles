@@ -14,25 +14,25 @@
       "id": 1,
       "name": "Playstation 3",
       "year": 2006,
-      "type": 1
+      "type": "console de salon"
     },
     {
       "id": 2,
       "name": "Xbox 360",
       "year": 2005,
-      "type": 1
+      "type": "console de salon"
     },
     {
       "id": 3,
       "name": "PSP",
       "year": 2007,
-      "type": 2
+      "type": "console portable"
     },
     {
       "id": 4,
       "name": "DS",
       "year": 2004,
-      "type": 2
+      "type": "console portable"
     }
   ]
 }

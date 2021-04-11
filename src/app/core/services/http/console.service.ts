@@ -13,7 +13,7 @@ endPoint: string = environment.ConsoleEndPoint;
   get(): Observable<Console[]>{
     return this._httpClient.get<Console[]>(this.endPoint);
   }
-  post(student: Console):Observable<Console>
+  post(console: Console):Observable<Console>
   {
     return this._httpClient.post<Console>(this.endPoint, console);
   }
