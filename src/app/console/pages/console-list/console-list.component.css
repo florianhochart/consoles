@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .admin-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
