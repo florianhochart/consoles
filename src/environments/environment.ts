@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  ConsoleEndPoint: "http://localhost:3000/consoles"
+  ConsoleEndPoint: "https://consoles-api-heroku.herokuapp.com/consoles"
 };
 
 /*
