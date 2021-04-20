@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  ConsoleEndPoint: "https://consoles-api-heroku.herokuapp.com/consoles"
 };

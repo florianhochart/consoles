@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "consolesapp"
+  },
+  "targets": {
+    "consolesapp": {
+      "hosting": {
+        "consoles": [
+          "consolesapp"
+        ]
+      }
+    }
+  }
+}
