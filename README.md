@@ -1,5 +1,7 @@
 # Consoles
+Application web sous Angular 11 permettant de manipuler des données (ici sur des consoles de jeux-vidéos) en faisant appel à un webservice. Projet effectué pendant ma formation de Licence professionnelle - Développement Internet & Mobile.
 
+# ANGULAR PROJECT
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
 
 ## Development server
